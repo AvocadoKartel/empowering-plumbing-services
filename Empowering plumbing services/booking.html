@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <h1>Book a Service</h1>
+        <p>Fill in the form below to schedule your plumbing service. Our team will confirm your booking shortly.</p>
+      </header>
+
+    <head>
+        <nav>
+            <ul>
+                <li><a href=index.html>Home</a></li>
+                <li><a href=about.html>About Us</a></li>
+                <li><a href=services.html>Services</a></li>
+                <li><a href=booking.html>Booking</a></li>
+                <li><a href=contact.html>Contact Us</a></li>
+            </ul>
+        </nav>
+    </head>
+    <header>
+        
+    
+      <main>
+        <form action="/submit-booking" method="post">
+          <fieldset>
+            <legend>Customer Details</legend>
+            <p>
+              <label for="name">Full Name</label><br />
+              <input type="text" id="name" name="name" required />
+            </p>
+    
+            <p>
+              <label for="email">Email</label><br />
+              <input type="email" id="email" name="email" required />
+            </p>
+    
+            <p>
+              <label for="phone">Phone Number</label><br />
+              <input type="tel" id="phone" name="phone" required />
+            </p>
+    
+            <p>
+              <label for="address">Service Address</label><br />
+              <textarea id="address" name="address" rows="3" required></textarea>
+            </p>
+          </fieldset>
+    
+          <fieldset>
+            <legend>Service Details</legend>
+            <p>
+              <label for="service">Select Service</label><br />
+              <select id="service" name="service" required>
+                <option value="">-- Please Choose --</option>
+                <option value="residential">Residential Plumbing (from R550)</option>
+                <option value="commercial">Commercial Plumbing (from R250)</option>
+                <option value="emergency">Emergency Repairs (from R650)</option>
+                <option value="installation">Installation & Maintenance (from R3,500)</option>
+              </select>
+            </p>
+    
+            <p>
+              <label for="details">Additional Details</label><br />
+              <textarea id="details" name="details" rows="4" placeholder="Describe the issue or service needed"></textarea>
+            </p>
+    
+            <p>
+              <label for="date">Preferred Date</label><br />
+              <input type="date" id="date" name="date" required />
+            </p>
+    
+            <p>
+              <label for="time">Preferred Time</label><br />
+              <input type="time" id="time" name="time" />
+            </p>
+          </fieldset>
+    
+          <fieldset>
+            <legend>Confirmation</legend>
+            <p>
+              <label>
+                <input type="checkbox" name="consent" value="yes" required />
+                I confirm that the details provided are correct and I agree to be contacted by T.L.B Plumbing regarding my booking.
+              </label>
+            </p>
+          </fieldset>
+    
+          <p>
+            <button type="submit">Submit Booking</button>
+          </p>
+        </form>
+      </main>
+    
+      <footer>
+        <p>&copy; 2025 Empowering The Nation - Plumbing Solutions All rights reserved.</p>
+      </footer>
+</body>
+</html>
